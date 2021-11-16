@@ -176,7 +176,7 @@ body{
 
 .visualbar{
     height: 200px;
-    background-image: url("images/entertainment.jpg");
+    background-image: url("../images/entertainment.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -281,11 +281,11 @@ body{
     align-items: center;
     background: no-repeat center center/cover;
     position: relative;
-    background-image: url("images/about.jpg")
+    background-image: url("../images/about.jpg")
 }
 
 .overlayBox.service{
-    background-image: url("images/services.jpg")
+    background-image: url("../images/services.jpg")
 }
 
 /* multiply made each other darker and brighter. position: absolute is based on the html location.*/ 
@@ -797,13 +797,13 @@ body{
 }
 
 .needPart .right .thumb {
-    background-image:url('images/bowling.jpg')
+    background-image:url('../images/bowling.jpg')
 }
 
 .needPart .thumb {
     display:block;
     width:218px; 
-    background:url('images/bar.jpg')  center center/cover; 
+    background:url('../images/bar.jpg')  center center/cover; 
 } 
 
 /* 19px space margin */
@@ -825,7 +825,7 @@ body{
 }
 
 .newYear .right .thumbimg{
-    background-image:url('images/climbing.jpg')
+    background-image:url('../images/climbing.jpg')
 }
 
 .newYear .cont{
@@ -834,7 +834,7 @@ body{
 
 .newYear .thumbimg{
     width:218px; 
-    background: url('images/fitness.jpg')  center center/cover; 
+    background: url('../images/fitness.jpg')  center center/cover; 
 }
 
 .cont h3{
