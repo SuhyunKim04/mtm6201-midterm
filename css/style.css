@@ -107,14 +107,14 @@ body{
 /* displays the image on the background to match the height. no repeat image. image size is cover. position is center.*/
 .summary .thumb{
     height:200px;
-    background-image: url("images/school.jpg");
+    background-image: url("../images/school.jpg");
     background-repeat: no-repeat;
     background-size: cover; 
     background-position: center center;
 }
 
 .summary .thumb.cont{
-    background-image: url("/images/entertainment.jpg");
+    background-image: url("../images/entertainment.jpg");
 }
 
 .summary .cont{
