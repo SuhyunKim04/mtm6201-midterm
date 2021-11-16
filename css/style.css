@@ -1,0 +1,1268 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;1,100;1,300;1,400;1,700&display=swap');
+
+
+/*using vw for Tablet and iphone */
+.notM {
+    display:none;
+}
+
+/*Set font family to Raleway and font size to 4.26vw(16px)*/
+body{
+    font-family: 'Raleway', sans-serif;
+    font-size:4.26vw;
+}
+/* set background color and color also, cording text-align to center for placing nav in the middle of header*/ 
+.pageHeader{
+    background-color:#3C3B3A;
+    color:#F2F2F2;
+    text-align: center;
+    padding: 0 0 21px;
+    font-size: 4.8vw;
+}
+/* width 375px*/
+.pageHeader h1 img{
+    width:40vw;
+}
+/* a is an inline elemnet originally */
+.pageHeader a{
+    display: block;
+}
+
+.pageHeader .navigation li{
+    margin-bottom: 28px;
+}
+
+.pageHeader .navigation li:last-child{
+    margin-bottom:0;
+}
+
+.pageHeader .navigation a.active {
+    font-weight: bold;
+}
+
+.contents {
+    padding: 35px 38px 16px;
+}
+
+.contents h2 {
+    font-size: 10.6vw;
+    font-weight: bold;
+    color:#3C3B3A;
+}
+
+/* set font size to 20px and use line height for spacing between line*/
+.contents p {
+    font-size: 5.3vw;
+    line-height: 2;
+    margin: 20px 0;
+}
+
+/* limit to the size of the parent element*/
+.contents img {
+    max-width: 100%;
+    margin: 16px 0 0;
+}
+
+/* used flex to get the location. uses wrap to move next line when the place does not enough. use space-between for even spacing.*/
+.contents .arcList{
+    margin: 0 0 30px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.arcList img {
+    margin: 0 0 15px;
+}
+/* use flex to align text and images and column for vertical arrangement. flex direction os vertical, so use align-itmes*/
+.arcList li{
+    width: 114px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 4.53vw;
+    color: #26A682; 
+}
+
+/*use a block element to get a whole line*/
+.btn {
+    display:block;
+    background-color:#26A682;
+    color:#F2F2F2;
+    border-radius: 60px;
+    font-weight: bold;
+    padding: 0.5rem;
+    text-align: center;
+    box-shadow: 0 10px 10px rgb(18, 74, 58, 0.5);
+    font-size: 8.53vw;
+}
+
+
+.summary {
+    background-color: #F2F2F2;
+}
+
+/* displays the image on the background to match the height. no repeat image. image size is cover. position is center.*/
+.summary .thumb{
+    height:200px;
+    background-image: url("/images/school.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.summary .thumb.cont{
+    background-image: url("/images/entertainment.jpg");
+}
+
+.summary .cont{
+    padding:38px;
+}
+
+.summary h3{
+    font-size: 8.53vw;
+    font-weight: 500;
+    font-style: italic;
+    margin: 0 0 20px 0;
+}
+
+.summary h4{
+    color: #26A682;
+    font-size: 6.4vw;
+    font-weight: 400;
+    margin: 0 0 14px;
+}
+
+.summary p{
+    font-weight: 300;
+    color: #3C3B3A;
+    line-height: 2;
+    font-size: 4.26vw;
+}
+
+/* text position is center */
+
+.summary.dark{
+    background-color: #3C3B3A;
+    color: #F2F2F2;
+    text-align: center;
+    padding: 30px 31px 59px 31px;
+}
+
+.summary.dark h4{
+    color: #F2F2F2;
+    font-size: 6.4vw;
+}
+
+/* In a designated space, text left side*/
+.summary.dark p {
+    line-height: 2;
+    font-weight: 300;
+    color: #F2F2F2;
+    font-size: 4.26vw;
+    text-align: left;
+}
+
+/* image size is 30vw(175px). set 70% round border and border-style.*/
+
+.summary.dark img{
+    width: 30vw;
+    border-radius: 70%;
+    border-style: solid;
+    border-color: #F2F2F2;
+}
+
+.visualbar{
+    height: 200px;
+    background-image: url("/images/entertainment.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    margin: 0 0 0 0;
+}
+
+.btn.full {
+    width:100%;
+}
+
+/* the size is half rather than full size */
+
+.btn.half {
+    width:50%;
+    margin: 31px 0 0 auto;
+    font-size: 5.3vw;
+}
+
+/* posicion sets to the designated location and display is flex and make direction is column also, align items is center */
+  
+.btnTop{
+    position: fixed;
+    right:20px;
+    bottom:48px;
+    color: #F2F2F2;
+    font-size: 2.4vw;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+
+
+}
+
+.btnTop img{
+    width: 22px;
+    margin: 0 0 6px;
+}
+
+.pageFooter{
+    background-color: #3C3B3A;
+    padding: 37px 0 35px;
+}
+
+/* for making text center, uses text-align*/
+
+.pageFooter h2{
+    color: #F2F2F2;
+    font-weight: 300;
+    font-size: 6.4vw;
+    text-align: center;
+    margin-bottom: 13px;
+
+}
+
+/* uses flex for arranging ul also, uses align-items and justify-content to center */
+
+.pageFooter ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pageFooter ul img{
+    width: 25px;
+}
+
+
+.pageFooter li:not(:last-child){
+    margin-right: 12px;
+}
+
+.construction{
+    padding: 34px 45px 0 36px;
+}
+
+.construction h2{
+    font-weight: bold;
+    font-size: 10.6vw;
+}
+
+.construction p{
+    font-size: 5.3vw;
+    line-height: 2;
+    margin: 20px auto;
+    font-weight: 400;
+    color: #3C3B3A;
+}
+
+/* limit to the size of the parent element*/
+
+.contImg img{
+    width: 100%;
+    padding: 24px 37px 26px;
+}
+
+/* position is relative. background-repeat, background-size, background-position */
+
+.overlayBox{
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: no-repeat center center/cover;
+    position: relative;
+    background-image: url("/images/about.jpg")
+}
+
+.overlayBox.service{
+    background-image: url("/images/services.jpg")
+}
+
+/* multiply made each other darker and brighter. position: absolute is based on the html location.*/ 
+
+.colorBox{
+    flex-grow:1;
+    background-color: #26A682;
+    mix-blend-mode: multiply;
+    position: absolute;
+    left:0;top:0;right:0;bottom:0;
+}
+
+/* position is relative. uses z-index to forward the text*/
+
+.overlayBox h2{
+    color: #F2F2F2;
+    font-size: 10.6vw;
+    font-weight: bold;
+    position:relative;
+    z-index:1;
+}
+
+.www{
+    background-color: #F2F2F2;
+    padding: 32px 36px 0; 
+}
+
+.www h3{
+    font-size: 8.53vw;
+    font-weight: bold;
+    font-style: italic; 
+    margin: 0 0 21px 0;
+}
+
+/* makes text between space */
+
+.www p{
+    padding: 0 0 37px;
+    line-height:2;
+    font-size: 4.26vw;
+    color: #3C3B3A;
+    font-weight: 300;
+}
+
+.needPart article{
+    padding: 32px 44px 35px 36px; 
+}
+
+.needPart h3{
+    font-size: 8.53vw;
+    font-weight: bold;
+    color: #3C3B3A;
+}
+
+.needPart h4{
+    font-size: 6.4vw;
+    margin: 23px 18px 0;
+    color: #26A682;
+    font-weight: 400;
+}
+
+.needPart p{
+    line-height: 2;
+    font-size: 4.26vw;
+    font-weight: 300;
+    color:#3C3B3A;
+}
+
+/* makes the background color */
+
+.needPart article:last-child{
+    background-color: #F2F2F2;
+}
+
+.subcribe {
+    background-color: #3C3B3A;
+    padding: 22px 35px 23px 37px;
+}
+
+.subcribe h4{
+    color: #F2F2F2;
+    font-size: 4.8vw;
+}
+
+/* use a block element to get a whole line. makes border-radius to 60px and width is 50%*/
+
+.subbtn {
+    display:block;
+    background-color:#26A682;
+    color:#F2F2F2;
+    border-radius: 60px;
+    font-weight: 600;
+    width:50%;
+    margin: 20px 0 0 70px;
+    font-size: 5.3vw;
+    height: 35px;
+}
+
+.newYear article{
+    padding: 32px 38px 0 27px;
+}
+
+.newYear h3{
+    font-size: 8.53vw;
+    font-weight: bold;
+    color: #3C3B3A;
+}
+
+.newYear h4{
+    font-size: 6.4vw;
+    margin: 23px 0 0 0;
+    color: #26A682;
+}
+
+.newYear p{
+    line-height: 2;
+    font-size: 4vw;
+    margin: 19px 0 30px 0;
+    font-weight: 300;
+}
+
+/* makes the background color */
+
+.newYear article:last-child{
+    background-color: #F2F2F2;
+}
+
+.association{
+    margin: 40px 37px 44px; 
+}
+
+/* vertical alignmnet */
+
+.special {
+    display: flex;
+    flex-direction: column;
+}
+
+.special h2{
+    font-size: 14.93vw;
+    font-weight: bold;
+    text-align: center;
+    color: #3C3B3A;
+}
+
+/* limit to the size of the parent element*/
+
+.special img{
+    max-width: 100%;
+    margin: 50px 0 0
+}
+
+.special li:first-child{
+    width: 301px;
+}
+
+.special li:nth-child(2){
+    width: 202px;
+    margin: 0 43px;
+}
+
+.special li:nth-child(3){
+    width: 220px;
+    margin: 0 38px;
+}
+
+.special li:last-child{
+    width: 152px;
+    margin: 0 70px;
+}
+
+.fromYou{
+    margin: 36px 39px 15px 36px;
+    color: #3C3B3A;
+}
+
+.fromYou h2{
+    font-size: 13.3vw;
+    font-weight: bold;
+}
+
+.fromYou p{
+    line-height: 2;
+    font-size: 5.3vw;
+    font-weight: 400;
+}
+
+/* limit to the size of the parent element*/
+
+.fromYou img{
+    max-width: 100%;
+}
+
+/* refer to the font-size of the html element*/
+
+.apply{
+    background-color: #26A682;
+    border-radius: 1.5rem;
+    color: #F2F2F2;
+    padding: 29px 0 31px;
+    margin: 0 36px;
+    box-shadow: 0 10px 10px rgb(18, 74, 58, 0.3);
+}
+
+.apply h2{
+    font-size: 10.6vw;
+    font-weight: bold;
+    margin: 0 0 20px 17px;
+}
+
+.apply ul{
+    margin: 0 0 30px 15px;
+    font-weight: 300;
+}
+
+/* vertical alignment */
+
+.apply li{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 0 0 15px 0;
+    
+}
+
+/* makes border-radius to 70px */
+
+.apply input{
+    margin: 9px 0 0;
+    height: 40px;
+    border-radius: 70px;
+    font-size: 4.26vw;
+    color: #3C3B3A;
+    padding-left:12px;
+}
+
+/* makes border-radius to 10px */
+
+#user-message{
+   height: 100px;
+   border-radius: 10px;
+}
+
+.btn.dark {
+    background-color:#3C3B3A;
+    font-size: 8.53vw;
+    width: 90%;
+    height: 50px;
+    margin: 0 0 0 17px;
+}
+
+.location {
+    padding: 73px 58px 0 36px;
+}
+
+.location h3{
+    font-size: 10.6vw;
+    font-weight: bold;
+    color: #3C3B3A;
+    margin: 0 0 28px;
+}
+
+.location h4{
+    font-size: 6.4vw;
+    font-weight: 300;
+    margin: 0 0 26px;
+}
+
+.location ul{
+    font-size: 4.26vw;
+    font-weight: 300;
+    line-height: 3;
+}
+
+.map iframe{
+    width: 100%;
+    height: 250px;
+    margin: 50px 0 0;
+}
+
+/* thumb is needed tablet and PC */
+
+.needPart .thumb {
+    display:none;
+}
+
+ 
+/*------------------------------Tablet------------------------------*/
+
+@media all and (min-width : 768px){
+
+/* set block for the scroll icon */
+
+.notM {
+        display:block;
+    }
+
+/* set the flex for arrangement unlike mobile */
+
+.pageHeader{
+        font-size: 2.3vw;
+        display: flex;
+        padding:0 80px;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+.pageHeader h1 a {  
+        height: 80px;
+    }
+
+.pageHeader h1 img{
+        height:100%;
+        width:auto;
+    } 
+
+/* set flex and center to align-items */
+
+.navigation ul{
+        display: flex;
+        align-items: center;
+    }
+
+.pageHeader .navigation li {
+        margin-bottom:0;
+    }
+
+/* margin right and left 31px to space */
+
+.pageHeader .navigation li:nth-child(2) {
+        margin:0 31px;
+    }
+
+.summary .thumb {
+        height:334px;
+    }
+.summary .cont {
+        padding:38px 100px;
+    }
+
+.contents p{
+        font-size: 3.5vw;
+    }
+
+.contents .inner{
+        margin: 0 80px 0;
+    }
+    
+.arcList img {
+        margin: 0 0 13px;
+    }
+    
+.arcList li{
+        width: 33px;
+        font-size: 2vw;
+        color: #26A682;
+    }
+
+.btn {
+        font-size: 5.2vw;
+        margin: 0 0 0 180px;
+    }
+.btn.full {
+        width:300px;
+        margin: auto;
+    }
+
+/* changing the location of text and icons to column-reverse */
+
+.iconscroll {
+        display: flex;
+        flex-direction: column-reverse;
+        font-size: 2vw;
+        margin: 0 365px;
+        align-items: center;
+        margin: 0 0 43px 0;
+    }
+
+.iconscroll img{
+        width: 25px;
+    }
+
+.contents img {
+        width: 350px;
+        margin: 39px auto 0;
+        display:block;
+    }
+
+.summary .thumb {
+        height:334px;
+    }
+
+/* half buttton size line fits the width */
+
+.btn.half{
+       height:45px;
+       font-size: 3.5vw;
+       width: 40%;
+   }
+
+/* set flex to arrange*/
+
+.summary.dark{
+    display: flex;
+    padding: 58px 80px;
+}
+
+.summary.dark h4{
+    font-size: 3.1vw;
+    font-weight: 500;
+}
+
+.summary.dark p {
+    line-height: 2.5rem;
+    font-size: 3.1vw;
+    margin: 0 0 0 58px;
+}
+
+.summary.dark img{
+    width: 22.7vw;
+    border-style:solid;
+    margin: 0 0 31px 0; 
+}
+
+.pageFooter h2{
+    font-size: 3.1vw;
+}
+
+.pageFooter ul img{
+    width: 30px;
+}
+
+.pageFooter ul img:last-child{
+    height: 30px;
+}
+
+.btnTop{
+    font-size: 1.1vw;
+}
+
+.btnTop img{
+    width: 2.8vw;
+}
+
+.construction h2{
+    font-size: 9.3vw;
+}
+
+.construction p{
+    font-size: 3.1vw;
+}
+
+.construction{
+   margin: 92px 82px 0;
+   padding: 0 0;
+}
+
+.contImg img{
+    width: 74vw;
+}
+
+.overlayBox h2{
+    font-size: 7.2vw;
+}
+
+.www{
+    padding: 50px 100px 0;
+}
+
+.www h3{
+    font-size: 5.2vw;
+}
+
+.www p{
+    font-size: 2.3vw;
+}
+
+/* makes horizontal alignment */
+
+.subcribe {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.subcribe h4{
+    font-size: 3.1vw;
+}
+
+
+
+.subbtn {
+    width:20%;
+    font-size: 3.1vw;
+    margin: 0 0;
+}
+
+/* same width and height for setting space-evenly*/
+
+.needPart article {
+    display:flex;
+    justify-content:space-evenly;
+}
+
+/* changing position*/
+
+.needPart .right {
+    flex-direction:row-reverse;
+}
+
+.needPart .right .thumb {
+    background-image:url('../images/bowling.jpg')
+}
+
+.needPart .thumb {
+    display:block;
+    width:218px; 
+    background:url('../images/bar.jpg')  center center/cover; 
+} 
+
+/* 19px space margin */
+
+.needPart .cont {
+    width:calc(374px - 19px);
+}
+
+
+
+.newYear article{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 32px 44px 35px 36px;
+}
+
+.newYear .right{
+    flex-direction: row-reverse;
+}
+
+.newYear .right .thumbimg{
+    background-image:url('/images/climbing.jpg')
+}
+
+.newYear .cont{
+    width:calc(374px - 19px);
+}
+
+.newYear .thumbimg{
+    width:218px; 
+    background: url('/images/fitness.jpg')  center center/cover; 
+}
+
+.cont h3{
+    font-size: 5.2vw;
+}
+
+.cont h4{
+    font-size: 4.1vw;
+}
+
+.cont p{
+    font-size: 2.3vw;
+}
+
+.special h2{
+    font-size: 7.2vw;
+}
+
+.special ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.fromYou{
+    margin: 91px 105px 0 80px;
+}
+
+.fromYou h2{
+    font-size: 9.3vw;
+    margin: 0 0 45px 0;
+}
+
+.fromYou p{
+    font-size: 3.1vw;
+}
+
+.fromYou img{
+    width: 452px;
+    margin: 0 0 0 77px;
+}
+
+.apply{
+    padding: 41px 45px 27px;
+    margin: 0 79px;
+}
+
+.apply h2{
+    font-size: 10.6vw;
+}
+
+    
+.apply li{
+    width: 100%;
+}
+
+
+.apply input{
+    font-size: 2vw;
+}
+
+#user-message{
+    height: 148px;
+ }
+
+ .btn.dark {
+    font-size: 5.2vw;
+    width: 40%;
+    height: 65px;
+    margin: 0 0 0 307px;
+}
+
+.location h3{
+    font-size: 9.3vw;
+}
+
+.location h4{
+    font-size: 5.2vw;
+}
+.location ul{
+    font-size: 2.3vw;
+    line-height: 2.5rem;
+}
+.map iframe{
+    width: 100%;
+    height: 500px;
+    margin: 50px 0 0;
+}
+   
+
+/*  ---------------------------------------------
+         PC
+    --------------------------------------------- */
+
+}
+
+@media all and (min-width : 1025px){
+    
+    .pageHeader{
+        height: 75px;
+        font-size: 16px;
+    }
+
+    .contents {
+        padding: 112px 80px 0;
+        display: flex;
+        justify-content:space-evenly;  
+    }
+
+/* 50% size and space */
+
+    .contents .inner {
+        width:calc(50% - 50px);
+        margin: 0 0;
+    }
+
+    .contents .inner + img {
+        width:50%;
+        margin:0;
+    }
+
+    .contents h2 {
+        font-size: 72px;
+    }
+
+    .contents p{
+        font-size: 24px;
+        font-weight: 300;
+    }
+
+    .contents img{
+        width: 34px;
+    }
+
+    .arcList li{
+        font-size: 16px;
+    }
+
+    /* including even spaces, aligning. */
+
+    .contents .arcList{
+        justify-content: space-around;
+    }
+
+    .btn.full{
+        height: 65px;
+        font-size: 40px;
+        margin: 0 0;
+    }
+
+    .iconscroll{
+        margin:0 0 18px 0;
+        font-size: 16px;
+    }
+
+    /* including even spaces, aligning. uses flex for aligning */
+    .summary {
+        display:flex;
+        justify-content:space-around;
+        align-items: center;
+
+    }
+
+    .summary .thumb {
+        width:813px;
+        height:337px;
+        margin-left:50px;
+    }
+
+    .summary .cont {
+        width:813px;
+        padding: 38px 0;
+        margin:30px;
+    }
+
+    .summary h4{
+        font-size: 40px;
+    }
+
+    .summary h3{
+        font-size: 32px;
+        font-weight: 500;
+    }
+
+    .summary p{
+        font-size: 18px;
+    }
+
+    .btn.half{
+        height: 45px;
+        font-size: 27px;
+        width: 40%;
+    }
+
+
+    .summary.dark{
+        padding: 58px 137px 35px 137px;
+    }
+
+
+    /* arranges itmes vertical and horizontal */
+
+    .summary.dark header{
+        display: flex;
+        justify-content: space-evenly;
+        align-items:center;
+    }
+
+    .summary.dark img{
+        width: 175px;
+    }
+
+    .summary.dark h4{
+        font-size: 24px;
+        padding-left: 97px;
+    }
+
+    .summary.dark p{
+        font-size: 24px;
+    }
+    
+    /* arranges article and image */
+
+    .construction{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .construction .contPart{
+        width: calc(100% - 50px);
+        padding: 0 0 234px 0;
+    }
+
+    .contPart h2{
+        font-size: 72px;
+    }
+
+    .contPart p{
+        font-size: 24px;
+    }
+
+    .contImg img{
+        width: 820px;
+        max-width: 100%;
+        margin: 0 0;
+        }
+
+    .contImg{
+        margin: 0 0;
+        padding: 0 0;
+    }
+
+    .overlayBox h2{
+        font-size: 72px;
+    }
+
+    /* distribute three articles evenly */
+
+    .contAbout .www{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 232px 140px 262px;
+    }
+
+    .www article h3{
+        font-size: 40px;
+    }
+
+    .www article p{
+        font-size: 18px;
+    }
+
+    .contAbout .www article:nth-child(2){
+        margin: 0 84px;
+    }
+
+    .needPart .thumb{
+        width: 813px;
+        height: 337px;
+    }
+
+    .needPart article{
+        padding: 82px 140px; 
+    }
+
+    .needPart .cont{
+        width: 789px;
+        padding: 0 0 0 40px;
+    }
+
+    .cont h3{
+        font-size: 40px;
+    }
+
+    .cont h4{
+        font-size: 32px;
+        margin: 16px 0 0;
+    }
+
+    .cont p{
+        font-size: 18px;
+    }
+
+    .subcribe h4{
+        font-size: 40px;
+    }
+
+    .subbtn {
+        width:232px;
+        font-size: 27px;
+        height: 45px;
+    }
+
+    .newYear .thumbimg{
+        width: 813px;
+        height: 337px;
+    }
+
+    .newYear article{
+        padding: 82px 140px;
+    }
+
+    .newYear .cont{
+        width: 789px;
+        padding: 0 0 0 40px;
+    }
+    .special h2{
+        font-size: 72px;
+    }
+
+    /* switch from vertical to horizontal */
+
+    .special ul{
+        flex-direction: row;
+    }
+
+    /* switch from vertical to horizontal */
+
+     .bundle{
+        display: flex;
+        justify-content: space-between;
+        padding: 162px 140px 0;
+    }
+
+    .from h2{
+        font-size: 72px;
+    }
+
+    .apply{
+        width: calc(50% - 20px);
+        margin: 0 0;
+        height: 801px;
+    }
+
+    .fromYou{
+        margin: 0 0;
+        width:calc(50% - 20px);
+    }
+
+    .fromYou img{
+        width:723px;
+        margin: 0 0;
+    }
+
+    .fromYou h2{
+        font-size: 72px;
+    }
+
+    .fromYou p{
+        font-size: 24px;
+    }
+
+    /* articles make column direction */
+
+    .frominner{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 100px 0 0;
+    }
+
+    .apply h2{
+        font-size: 72px;
+        margin: 0 0;
+    }
+    
+    .apply ul{
+        font-size: 24px;
+    }
+
+    .apply input{
+        font-size: 16px;
+    }
+
+    .place{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .location h3{
+        font-size: 72px;
+    }
+
+    .location h4{
+        font-size: 40px;
+    }
+
+    .location ul{
+        font-size: 18px;
+    }
+    
+    .map {
+        width: 812px;
+        margin: 0 120px 0 0;
+    }
+
+    .btn.dark{
+        margin: 0 0 0 70px;
+        font-size: 40px;
+        width: 210px;
+    }
+
+    .location{
+        width:calc(50% - 20px);
+    }
+}
+ 
